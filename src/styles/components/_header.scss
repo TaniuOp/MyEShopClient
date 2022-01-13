@@ -1,0 +1,14 @@
+.header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(128, 128, 128, 0.678);
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: start;
+}
+
+.App-logo {
+    height: 6vmin;
+    pointer-events: none;
+    margin: 1%
+  }

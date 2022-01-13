@@ -1,13 +1,19 @@
 import React from "react";
 
 const Card = (props) => {
-  return <div>
-    <img src={props.productsInfo.img} alt="{props.productsInfo.name}"/>
-    <h1>{props.productsInfo.name}</h1>
-    <h2>{props.productsInfo.price}</h2>
-    <h2>{props.productsInfo.review}</h2>
-    <h2>{props.productsInfo.created}</h2>
-    <h5>{props.productsInfo.id}</h5>
+
+  const moreInfo = () => {
+    alert("Show item Manufacturer")
+  }
+
+  return <div className="productCard" onClick={moreInfo}>
+      <p className="productId">Item number.{props.productsInfo.id}</p>
+      <img src={props.productsInfo.image} alt="{props.productsInfo.name}" className="product" />
+      <h2>{props.productsInfo.title}</h2>
+      <p className="productDescription">{props.productsInfo.description}</p>
+      <p className="productReviews">Reviews: {props.productsInfo.reviews} / 5</p>
+      <p className="productPrice">{props.productsInfo.price} €</p>
+      <p className="productCategory">#{props.productsInfo.category}</p>
   </div>;
 };
 

@@ -79,8 +79,6 @@ const Products = () => {
 
 
   return <div>
-
-
     <p>Search products:</p>
     <form onSubmit={handleSubmit}>
       <input type="text" name="searchProduct" id="searchProduct" value={inputValue} />

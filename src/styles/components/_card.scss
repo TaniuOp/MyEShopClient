@@ -1,0 +1,47 @@
+div.container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.productCard {
+    margin: 3rem;
+    border-radius: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 25px 4rem;
+    flex: 25%;
+    width: 200px;
+    height: 400px;
+}
+
+h2{
+    overflow: scroll;
+    max-height: 30px;  
+}
+
+img.product{
+    height: 30%;
+}
+
+p.productPrice{
+    font-weight: bold;
+    text-align: right;
+}
+
+p.productDescription{
+    font-size: 0.9rem;
+    text-align: justify;
+    margin-right: 8px;
+    overflow: scroll;
+    max-height: 100px;  
+}
+
+p.productReviews{
+    color: rgb(255, 0, 0);
+    text-align: left
+}
+
+p.productId{
+    font-size: 0.4em;
+    text-align: right;
+}

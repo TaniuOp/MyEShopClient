@@ -1,9 +1,10 @@
 import React from "react";
 
+
 const Card = (props) => {
 
   const moreInfo = () => {
-    alert("Show item Manufacturer")
+    alert(`Manufacturer: ${props.productsInfo.fk_id_manufacturer}`)
   }
 
   return <div className="productCard" onClick={moreInfo}>
